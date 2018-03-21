@@ -1,0 +1,108 @@
+page-login {
+    .content {
+     
+        background: url('../assets/img/login-bg.jpg') center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        &::before {
+            background: #000000;
+            background: -webkit-linear-gradient(to bottom, #53346D, #000000);
+            background: linear-gradient(to bottom, #53346D, #000000);
+            width: 100%;
+            height: 100%;
+            content: ' ';
+            display: block;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            opacity: .5;
+        }
+    }
+    .logo-wrap {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        .logo {
+            z-index: 2;
+            max-width: 40%;
+            margin: 0px auto;
+        }
+    }
+    .sub-title {
+        z-index: 2;
+        color: #fff;
+        text-transform: capitalize;
+        position: relative;
+        font-size: 1.7rem;
+        margin: 15px auto;
+    }
+    .sub-title::before,
+    .sub-title::after {
+        position: absolute;
+        top: 10px;
+        z-index: 2;
+        content: ' ';
+        width: 70px;
+        height: 1px;
+        background-color: #1f84cc;
+        display: block;
+    }
+    .sub-title::before {
+        left: 30px;
+    }
+    .sub-title::after {
+        right: 30px;
+    }
+    .fb {
+        z-index: 2;
+        display: block;
+        content: ' ';
+        width: 40px;
+        height: 40px;
+        background-color: #3b5a9a;
+        color: #ffffff;
+        border: 4px solid #f3f3f3;
+        border-radius: 50%;
+        margin: 0px auto;
+        line-height: 31px;
+        font-size: 22px;
+    }
+    .or {
+        z-index: 2;
+        color: #fff;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin: 15px auto;
+    }
+    .round-box {
+        margin-top: 6rem;
+        .item,
+        .item-input {
+            padding: 0px;
+            .item-inner {
+                padding: 0px 8px;
+                border: none;
+                .input-wrapper {
+                    /* border-bottom: 1px solid #8d8d8d; */
+                }
+            }
+        }
+        .pass {
+            border-top: 1px solid #acacac;
+        }
+    }
+    .bottom-part {
+        width: 100vw;
+        position: absolute;
+        bottom: 0px;
+        display: inline;
+        background-color: $blue;
+        .link {
+            font-size: 1.5rem;
+            margin: 0px auto;
+            width: 50%;
+            padding: 16px 10px;
+            color: #e0e0e0;
+            text-transform: capitalize;
+        }
+    }
+}

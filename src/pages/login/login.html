@@ -1,20 +1,4 @@
-<!-- <ion-header>
-
-    <ion-navbar>
-        <ion-title>login</ion-title>
-
-        <ion-buttons end>
-            <button ion-button>
-                <ion-icon name="notifications"></ion-icon>
-            </button>
-        </ion-buttons>
-    </ion-navbar>
-
-</ion-header>
- -->
-
 <ion-content>
-
 
     <div class="logo-wrap">
         <div text-center class="logo">
@@ -30,8 +14,8 @@
 
     <ion-list text-center margin-horizontal class="round-box" *ngIf="!show">
 
-        <ion-item text-center class="ph">
-            <ion-input type="text" placeholder="Phone Number" text-center></ion-input>
+        <ion-item text-center class="email">
+            <ion-input type="email" placeholder="Email ID" text-center></ion-input>
         </ion-item>
 
         <ion-item text-center class="pass mb-20">
@@ -40,10 +24,21 @@
 
     </ion-list>
 
-    <ion-list text-center margin-horizontal class="round-box" *ngIf="show">
+    <ion-list text-center margin-horizontal class="round-box big" *ngIf="show">
 
+
+        <ion-item text-center class="name">
+            <ion-input type="text" placeholder="Name" text-center></ion-input>
+        </ion-item>
+        <ion-item text-center class="email">
+            <ion-input type="email" placeholder="Email ID" text-center></ion-input>
+        </ion-item>
         <ion-item text-center class="ph">
-            <ion-input type="text" placeholder="Phone Number" text-center></ion-input>
+            <ion-input type="tel" placeholder="Phone Number" text-center></ion-input>
+        </ion-item>
+
+        <ion-item text-center class="birth">
+            <ion-datetime placeholder="Date of Birth" displayFormat="MMM/DD/YYYY" pickerFormat="MMM DD YYYY" [(ngModel)]="myDate"></ion-datetime>
         </ion-item>
 
         <ion-item text-center class="pass">
@@ -69,8 +64,9 @@
 </ion-content>
 <ion-footer>
     <div class="bottom-part">
-        <p float-left text-center class="link" (tap)="forgotPass()">Forgot Password?</p>
-        <p float-right text-center class="link" (tap)="registration()">{{txtval}}</p>
+        <p float-left text-center class="link" (tap)="forgotPass()" *ngIf="!show">Forgot Password?</p>
+
+        <p float-right text-center class="link" (tap)="registration()" [class.full-width]="show">{{txtval}}</p>
     </div>
 
 </ion-footer>

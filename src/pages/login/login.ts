@@ -11,10 +11,10 @@ import { HomePage } from '../home/home';
 })
 export class LoginPage {
   show: boolean;
-  txtval: any = 'register now';
+  txtval: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.show = false;
-    this.txtval = 'register now';
+    this.txtval = 'create account';
   }
 
 
@@ -28,11 +28,11 @@ export class LoginPage {
   registration() {
     if (this.show) {
       this.show = false;
-      this.txtval = 'register now';
+      this.txtval = 'create account';
     }
     else {
       this.show = true;
-      this.txtval = 'login';
+      this.txtval = 'Already have account? login';
     }
   }
 }

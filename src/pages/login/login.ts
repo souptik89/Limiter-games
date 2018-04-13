@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { RegisterMorePage } from '../register-more/register-more';
 import { HomePage } from '../home/home';
 
 
@@ -11,9 +12,11 @@ import { HomePage } from '../home/home';
 })
 export class LoginPage {
   show: boolean;
+  title: any;
   txtval: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.show = false;
+    this.title = 'login';
     this.txtval = 'create account';
   }
 
@@ -32,7 +35,11 @@ export class LoginPage {
     }
     else {
       this.show = true;
+      this.title = 'Register';
       this.txtval = 'Already have account? login';
     }
+  }
+  continueReg() {
+    this.navCtrl.setRoot(RegisterMorePage);
   }
 }

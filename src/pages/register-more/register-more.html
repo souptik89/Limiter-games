@@ -1,0 +1,108 @@
+<ion-content>
+
+  <ion-list>
+    <ion-row>
+      <ion-col col-12>
+        <h4 class="title">shipping address</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-input type="text" placeholder="Type your Address"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-4>
+        <ion-item>
+          <ion-input type="text" placeholder="City"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-4>
+        <ion-item>
+          <ion-input type="text" placeholder="State"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-4>
+        <ion-item>
+          <ion-input type="text" placeholder="ZIP"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+
+  <ion-list>
+    <ion-row align-items-center>
+      <ion-col col-6>
+        <h4 class="title">billing address</h4>
+      </ion-col>
+      <ion-col col-6 class="same-addr">
+        <ion-item>
+          <ion-label>same as shipping address</ion-label>
+          <ion-checkbox></ion-checkbox>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-input type="text" placeholder="Type your Address"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-4>
+        <ion-item>
+          <ion-input type="text" placeholder="City"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-4>
+        <ion-item>
+          <ion-input type="text" placeholder="State"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-4>
+        <ion-item>
+          <ion-input type="text" placeholder="ZIP"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+
+  <ion-list radio-group class="plans mb-10">
+    <ion-row>
+      <ion-col col-12>
+        <h3 class="title">choose your memberships plan</h3>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-label>1 game rental
+            <span>$8.95</span> first month then
+            <span>$15.95/month</span>
+          </ion-label>
+          <ion-radio checked="true" value="one"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>2 games rental
+            <span>$13.95</span> first month then
+            <span>$20.95/month</span>
+          </ion-label>
+          <ion-radio value="two"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>2 games rental first 2 weeks free then
+            <span>$20.95/month</span>
+          </ion-label>
+          <ion-radio value="three"></ion-radio>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+  <ion-row justify-content-center>
+    <ion-col margin-horizontal class="mb-10">
+      <button ion-button class="btn orange-btn pop-in" (tap)="payment()">Proceed</button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

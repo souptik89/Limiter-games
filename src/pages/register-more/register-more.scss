@@ -1,0 +1,75 @@
+page-register-more {
+  .scroll-content {
+    background-color: #e4e4e4;
+  }
+  .list {
+    background-color: #ffffff;
+    margin: 2px 8px 7px;
+    border-radius: 2px;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(26, 26, 26, 0.3);
+    box-shadow: 0px 1px 3px 0px rgba(26, 26, 26, 0.3);
+    .title {
+      font-size: 1.5rem;
+      color: $dark;
+      text-transform: capitalize;
+      margin: 5px auto;
+    }
+    .item-block {
+      padding: 0px;
+      .item-inner {
+        padding: 0px;
+        border: none;
+      }
+    }
+    .item-input,
+    .item-block,
+    .item-block:last-child {
+      min-height: 4rem;
+      border-top: none;
+      border-bottom: 1px solid #919191;
+      .text-input {
+        color: #1a1a1a;
+        margin: 8px;
+        font-size: 1.4rem;
+      }
+    }
+    .same-addr {
+      ion-checkbox.checkbox {
+        margin: 0px 8px 0px 0px;
+      }
+      .item-block {
+        border: none;
+        .item-inner {
+          border: none;
+          padding: 0px;
+          .input-wrapper {
+            overflow: visible;
+            .label {
+              color: #919191;
+              font-size: 12px;
+              text-overflow: initial;
+              white-space: normal;
+              margin: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .plans {
+    .item-block {
+      .input-wrapper {
+        overflow: visible;
+        .label {
+          margin: 8px 8px;
+          font-size: 1.3rem;
+          color: #616161;
+          text-overflow: initial;
+          white-space: normal;
+          line-height: 1.6rem;
+        }
+      }
+    }
+  }
+}

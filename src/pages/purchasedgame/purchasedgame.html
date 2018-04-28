@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>purchased game</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-list class="gamelist">
+        <ion-item class="list-item mb-10">
+          <ion-thumbnail item-start class="item-pic" (click)="gamedetails()">
+            <img src="assets/img/ps4game.jpg" alt="avatar">
+          </ion-thumbnail>
+          <p text-capitalize class="name" (click)="gamedetails()">Alien: Isolation</p>
+          <p class="date">
+            <span>12/02/2018</span>
+          </p>
+          <p class="time">
+            <span>12:20</span>
+          </p>
+          <p text-capitalize class="status green" item-end>Purchased</p>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-content>

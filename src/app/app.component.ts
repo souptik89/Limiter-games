@@ -9,6 +9,15 @@ import { RegisterMorePage } from '../pages/register-more/register-more';
 import { CardPaymentPage } from '../pages/card-payment/card-payment';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { PurchasedgamePage } from '../pages/purchasedgame/purchasedgame';
+import { CurrentrentedPage } from '../pages/currentrented/currentrented';
+import { InQueuePage } from '../pages/in-queue/in-queue';
+import { TradeInPage } from '../pages/trade-in/trade-in';
+import { OrderhistoryPage } from '../pages/orderhistory/orderhistory';
+import { ChangeMembershipPage } from '../pages/change-membership/change-membership';
+import { ReportProblemPage } from '../pages/report-problem/report-problem';
+import { ReferPage } from '../pages/refer/refer';
+import { MailPage } from '../pages/mail/mail';
 
 @Component({
   templateUrl: 'app.html'
@@ -16,17 +25,28 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = PurchasedgamePage;
 
-  pages: Array<{ title: string, component: any }>;
+  pages: Array<{ icon: string, title: string, component: any }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'Login', component: LoginPage }
+      { icon: 'home', title: 'Home', component: HomePage },
+      { icon: 'game-controller-b', title: 'Purchased Games', component: PurchasedgamePage },
+      { icon: 'checkmark-circled', title: 'Current Rented Games', component: CurrentrentedPage },
+      { icon: 'bookmark', title: 'Games in Queue', component: InQueuePage },
+      { icon: 'bonfire', title: 'Trade-ins', component: TradeInPage },
+      { icon: 'clipboard', title: 'Shipping/Billing Address', component: RegisterMorePage },
+      { icon: 'home', title: 'Payments', component: CardPaymentPage },
+      { icon: 'email', title: 'E-mail Subscription', component: MailPage },
+      { icon: 'bag', title: 'Order History', component: OrderhistoryPage },
+      { icon: 'arrow-graph-up-right', title: 'Change Membership', component: ChangeMembershipPage },
+      { icon: 'sad', title: 'Report a Problem', component: ReportProblemPage },
+      { icon: 'person-add', title: 'Refer A Friend', component: ReferPage }
+
     ];
 
   }

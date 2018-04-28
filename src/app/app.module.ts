@@ -11,6 +11,15 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { PurchasedgamePage } from '../pages/purchasedgame/purchasedgame';
+import { CurrentrentedPage } from '../pages/currentrented/currentrented';
+import { InQueuePage } from '../pages/in-queue/in-queue';
+import { TradeInPage } from '../pages/trade-in/trade-in';
+import { OrderhistoryPage } from '../pages/orderhistory/orderhistory';
+import { ChangeMembershipPage } from '../pages/change-membership/change-membership';
+import { ReportProblemPage } from '../pages/report-problem/report-problem';
+import { ReferPage } from '../pages/refer/refer';
+import { MailPage } from '../pages/mail/mail';
 
 @NgModule({
   declarations: [
@@ -19,8 +28,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RegisterMorePage,
     CardPaymentPage,
     HomePage,
-
-    ListPage
+    ListPage,
+    PurchasedgamePage,
+    CurrentrentedPage,
+    InQueuePage,
+    TradeInPage,
+    OrderhistoryPage,
+    ChangeMembershipPage,
+    ReportProblemPage,
+    ReferPage,
+    MailPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +55,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     RegisterMorePage,
     CardPaymentPage,
     HomePage,
-    ListPage
+    ListPage,
+    PurchasedgamePage,
+    CurrentrentedPage,
+    InQueuePage,
+    TradeInPage,
+    OrderhistoryPage,
+    ChangeMembershipPage,
+    ReportProblemPage,
+    ReferPage,
+    MailPage
   ],
   providers: [
     StatusBar,
